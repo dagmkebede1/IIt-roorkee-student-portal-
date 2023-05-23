@@ -1,0 +1,11 @@
+.forupdateP{
+  width: 550px !important;
+  margin: 2rem auto;
+}
+select option:nth-child(even) {
+	background-color: #f2f2f2;
+  }
+  
+  select option:nth-child(odd) {
+	background-color: #fff;
+  }

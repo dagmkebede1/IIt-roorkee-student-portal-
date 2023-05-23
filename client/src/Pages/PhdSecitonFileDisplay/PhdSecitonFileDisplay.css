@@ -1,0 +1,15 @@
+#searchPhd{
+   margin: 2%;
+   width: 500px;
+   height: 50px;
+   border-radius: 15px;
+   border: 1px solid salmon;
+}
+
+#searchPhd ::placeholder{
+    text-align: end;
+    color: silver;
+}
+.TitleFromStaff{
+    text-decoration: underline;
+}

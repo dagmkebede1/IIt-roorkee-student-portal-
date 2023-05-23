@@ -1,0 +1,16 @@
+#forTextArea{
+    width: 90%;
+    height: 30vh;
+    margin: 1%;
+    resize: none;
+    border-radius: 10px;
+} 
+.notePartsell{
+    margin-top: 3% !important;
+    height: 100vh;
+    background-color: #fe8402;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+
+

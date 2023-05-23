@@ -1,0 +1,57 @@
+
+.label{
+    display: block;
+    width: 12rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color:#fe8402;
+    height: 2rem;
+    margin: 0.5rem auto;
+    font-family: 'Rubik Marker Hatch', cursive;
+}
+
+.label:hover{
+    color: #fe8402;
+    border: 2px #fe8402 solid ;
+    background-color:#007bff;
+}
+
+input[type="file"] {
+  display: none !important;
+  }
+
+
+
+.form_wrapperB{
+    border-radius: 15px;
+    background: whitesmoke;
+    box-shadow: 17px 17px 34px #d0d0d0;
+    opacity: 0.9;
+    width: 70%;
+}
+
+.notePart{
+    margin-top: 6% !important;
+    height: 80vh;
+    background-color: #fe8402;
+    opacity: 0.8;
+    border-radius: 15px;
+} 
+.forUl{
+    text-align: left !important;
+}
+li{
+    margin: 4%;
+    width: 100%;
+}
+
+select option:nth-child(even) {
+	background-color: #f2f2f2;
+  }
+  
+  select option:nth-child(odd) {
+	background-color: #fff;
+  }

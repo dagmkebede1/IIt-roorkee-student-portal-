@@ -1,0 +1,37 @@
+.aws-btn, .button{
+    --button-default-height: 70px;
+    --button-default-font-size: 20px;
+    --button-default-border-radius: 40px;
+    --button-horizontal-padding: 10px;
+    --button-raise-level: 10px;
+    --button-hover-pressure: 1.8;
+    --transform-speed: 0.275s;}
+    /* button is for the upload button styling */
+  .my-button , .button {
+    --button-secondary-color: transparent;
+    --button-secondary-color-dark: transparent;
+    --button-secondary-color-light: #aeb3b7;
+    --button-secondary-color-hover: #11688496;
+    --button-secondary-color-active: #e6d3d3;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    color: var(--button-secondary-color-light);
+
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .my-button:hover {
+    color: var(--button-secondary-color-hover);
+  }
+  
+  .my-button:active {
+    color: var(--button-secondary-color-active);
+  }
+  
+  

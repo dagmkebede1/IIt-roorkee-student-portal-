@@ -1,0 +1,16 @@
+.forSuccessPage{
+	background-color: #ABC7EC;
+	width: 70%;
+	margin: 7% auto;
+	border-radius: 20px;
+	background-color: whitesmoke;
+	height: 400px;
+	font-size: 30px;
+	text-align: center;
+	padding: 124px;
+}
+
+.thankYouAnch{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #ff8500;
+}
