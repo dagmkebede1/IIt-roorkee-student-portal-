@@ -1,8 +1,8 @@
-import express from 'express';
-import setNewPassWord from '../controllers/setNewPassword.js'
+import express from "express";
+import setNewPassWord from "../controllers/setNewPassword.js";
 
 let forNewPasswordUpdate = express.Router();
 
-forNewPasswordUpdate.post('/setNewPassword',setNewPassWord)
+forNewPasswordUpdate.post("/setNewPassword", setNewPassWord);
 
-export default setNewPassWord;
+export default forNewPasswordUpdate;

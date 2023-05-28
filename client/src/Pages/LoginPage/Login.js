@@ -43,8 +43,9 @@ const Login = () => {
 
   let navigate = useNavigate();
 
-  let userSet = (e) => {
+  let userSet = async (e) => {
     e.preventDefault();
+
     let url = `http://localhost:6500/user/tologin`;
     axios({
       method: "post",
@@ -55,15 +56,15 @@ const Login = () => {
         setresponse(data.data);
         console.log(data.data);
         let token = data.data.token;
-        cookies.set("token", token, {
-          path: "/",
-          expires: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
-        });
 
-        if (data.data.confirmation !== "false") {
+        if (data.data.confirmation === "true") {
+          cookies.set("token", token, {
+            path: "/",
+            expires: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
+          });
           dispatch(getUser());
+          navigate("/dashbord");
         }
-        // navigate("/dashbord");
       })
       .catch((err) => {
         // console.log(err)
@@ -90,9 +91,9 @@ const Login = () => {
   };
 
   if (response) {
-    if (response.confirmation === "true") {
-      return <DashBoard />;
-    } else {
+    if (response?.confirmation === "false") {
+      // return navigate("/dashboard");
+      // } else {
       return (
         <div className="forSuccessPage">
           <h1 className="thankYou">{response.message}</h1>

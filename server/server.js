@@ -52,6 +52,11 @@ app.use(express.static("Resources/goodsPicture/"));
 //     res.header("Access-Control-Allow-Credentials", true)
 //     next()
 //   });
+// app.get("/user/setNewPassword", (req, res) => {
+//   res.send("HI there");
+//   console.log("first");
+// });
+app.use("/user", setNewPassWord);
 app.use("/user", userProfile);
 app.use("/admin", tableRoute);
 app.use("/admin", emailCheck);
@@ -72,8 +77,6 @@ app.use("/user", getAllEduDocR);
 app.use("/user", goodsFileUploadR);
 app.use("/user", goodsShowerR);
 app.use("/user", phdPdfDawnloader);
-
-// app.use('/user',setNewPassWord)
 
 // connection info for database
 let connectionInfo = mysql2.createConnection({
